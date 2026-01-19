@@ -26,7 +26,10 @@ Hey, Netology
 1. На рабочей машиине уже был установлен Docker и Compose. В DockerHub залогигился через гугл аккаунт и создал публичный репозиторий  с именем "custom-nginx".
 2. Создал файл index.html и Dockerfile. Далее собираем образ с (моим логином): docker build -t nightwalker255/custom-nginx:1.0.0 .
 Как только браз собран, логинюсь: "docker login" и отправляю образ: "docker push nightwalker255/custom-nginx:1.0.0".
-ссылка на репозиторий: "https://hub.docker.com/u/nightwalker225".
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x1.png)
+Ссылка на репозиторий: "https://hub.docker.com/u/nightwalker225".
+
+
 
 ## Задача 2
 1. Запустите ваш образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
