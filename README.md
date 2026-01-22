@@ -163,21 +163,25 @@ services:
 
 ![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/5-2.png)
 
-Видим два файла, но согласно документации приоритет имеет "compose.yml".
+Видим два файла, согласно документации приоритет имеет "compose.yml", однако в моём случае почему-то работает "docker-compose".
 
-Редактируем "compose", чтобы запускались оба файла:
+Редактируем "docker-compose", чтобы запускались оба сервиса:
 ```
-version: "3"
-
-include:
-  - docker-compose.yaml
-
+version: '3'
 services:
   portainer:
     network_mode: host
     image: portainer/portainer-ce:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+
+  registry:
+    image: registry:2
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+
 ```
 ![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/5-3.png)
 
