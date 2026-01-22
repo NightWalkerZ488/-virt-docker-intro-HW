@@ -156,9 +156,11 @@ services:
 ## Выполнение задания:
 
 Создаём папку и файлы-
+
 ![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/5-1.png)
 
 Выполняем команду "compose up" - 
+
 ![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/5-2.png)
 
 Видим два файла, но согласно документации приоритет имеет "compose.yml".
