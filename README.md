@@ -23,9 +23,10 @@ Hey, Netology
 
 Выполнение задания:
 
-1. На рабочей машиине уже был установлен Docker и Compose. В DockerHub залогигился через гугл аккаунт и создал публичный репозиторий  с именем "custom-nginx".
+1. На рабочей машиине уже был установлен Docker и Compose. В DockerHub залогинился через гугл аккаунт и создал публичный репозиторий  с именем "custom-nginx".
 2. Создал файл index.html и Dockerfile. Далее собираем образ с (моим логином): docker build -t nightwalker255/custom-nginx:1.0.0 .
 Как только браз собран, логинюсь: "docker login" и отправляю образ: "docker push nightwalker255/custom-nginx:1.0.0".
+
 ![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x1.png)
 Ссылка на репозиторий: "https://hub.docker.com/u/nightwalker225".
 
@@ -41,6 +42,12 @@ Hey, Netology
 4. Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
+
+Выполнение:
+
+Последовательно выполнены все действия путём ввода нужных команд - 
+
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x2.png)
 
 
 ## Задача 3
