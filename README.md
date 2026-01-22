@@ -66,6 +66,23 @@ Hey, Netology
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+## Выполнение задания:
+
+1. Контейнер остановился, потому что nginx получил сигнал прерывания "SIGINT" путём ввода Ctrl+C и завершил работу.
+
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x3.png)
+
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x3-1.png)
+
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x3-2.png)
+
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x3-3.png)
+
+Объяснение ошибки: проброс портов настроен на порт 80 внутри контейнера, но после изменения настроек nginx стал слушать порт 81, а Docker по-прежнему перенаправляет трафик с хоста на порт 80 контейнера, где никто не слушает.
+
+Останавливаем и удаляем контейнер командой "docker rm -f custom-nginx-t2".
+
+
 ## Задача 4
 
 
