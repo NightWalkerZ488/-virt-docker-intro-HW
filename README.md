@@ -153,4 +153,42 @@ services:
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
 
+## Выполнение задания:
+
+Создаём папку и файлы-
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/5-1.png)
+
+Выполняем команду "compose up" - 
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/5-2.png)
+
+Видим два файла, но согласно документации приоритет имеет "compose.yml".
+
+Редактируем "compose", чтобы запускались оба файла:
+```
+version: "3"
+
+include:
+  - docker-compose.yaml
+
+services:
+  portainer:
+    network_mode: host
+    image: portainer/portainer-ce:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+```
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/5-3.png)
+
+"Заливаем" образ -
+
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/5-4.png)
+
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/5-5.png)
+
+Заходим в инспекцию - 
+
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/5-6.png)
+
+Если удалитm любой из манифестов компоуза и выполнить команду "docker compose up -d", получим предупреждение "WARNING: The project directory has changed...". Можем пересоздать проект как предлагают, или выполнить "docker compose down"- это и будет одна команда для "гашения" компоуза.
+
 ---
