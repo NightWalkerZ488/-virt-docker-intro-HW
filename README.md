@@ -93,6 +93,18 @@ Hey, Netology
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+## Выполнение задачи:
+
+Запускаем первый и второй контейнер, с CentOS и Debian.
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x4-1.png)
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x4-2.png)
+
+Создаём файлы внутри контейнра и на хосте.
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x4-3png.png)
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x4-4png.png)
+
+Проверяем наличие файлов.
+![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x4-5png.png)
 
 ## Задача 5
 
