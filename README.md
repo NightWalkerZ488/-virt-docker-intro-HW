@@ -70,8 +70,6 @@ Hey, Netology
 
 1. Контейнер остановился, потому что nginx получил сигнал прерывания "SIGINT" путём ввода Ctrl+C и завершил работу.
 
-![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x3.png)
-
 ![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x3-1.png)
 
 ![терминал](https://github.com/NightWalkerZ488/-virt-docker-intro-HW/blob/main/x3-2.png)
